@@ -2,10 +2,14 @@
 //
 
 #include "TVecteur3D.h"
+#include "TVecteur2D.h"
+#include "TTabVect.h"
 
 int main()
 {
     setlocale(LC_ALL, "");
+
+    //Vecteur 3D
 
     vect3D<int> v1(1, 2, 3);
     v1.affiche();
@@ -79,5 +83,44 @@ int main()
     else {
         cout << "Les vecteurs ne coincident pas" << endl;
     }
+
+    //Vecteur 2D
+
+    cout << endl;
+    cout << "Vecteur 2D" << endl;
+    vect2D<int> v1_2D(1,2);
+    vect2D<int> v2_2D(3,4);
+    vect2D<int> v3_2D(v1_2D);
+    cout << v1_2D;
+    cout << v2_2D;
+
+    cout << "Addition : " << endl;
+    v3_2D = v1_2D + v2_2D;
+    cout << v3_2D;
+
+
+    cout << endl;
+    cout << "Soustraction : " << endl;
+    v3_2D = v1_2D - v2_2D;
+    cout << v3_2D;
+
+    cout << endl;
+    cout << "Produit par un scalaire (ici 3) : " << endl;
+    v3_2D = v1_2D * 3;
+    cout << v3_2D;
+
+    cout << "Produit scalaire entre 2 vecteurs : " << v1_2D * v2_2D << endl;
+
+    cout << endl;
+    cout << "Conteneur de vecteurs : " << endl;
+    tabVecteur<vect3D<int>, 3> tab;
+
+    tab[0] = v1;
+    tab[1] = v2;
+    tab[2] = v3;
+
+    cout << tab[0];
+    cout << tab[1];
+    cout << tab[2];
 }
 

@@ -142,6 +142,8 @@
     <ClCompile Include="TPVecteur3D.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="TTabVect.h" />
+    <ClInclude Include="TVecteur2D.h" />
     <ClInclude Include="TVecteur3D.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

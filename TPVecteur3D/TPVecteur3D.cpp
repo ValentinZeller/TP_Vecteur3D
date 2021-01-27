@@ -44,7 +44,40 @@ int main()
     else {
         cout << "Les vecteurs ne coincident pas" << endl;
     }
-    
 
+    cout << endl;
+    cout << "Surcharge operateur" << endl;
+    cout << v1;
+    cout << v2;
+
+    cout << endl;
+    cout << "Addition : " << endl;
+    v3 = v1 + v2;
+    cout << v3;
+
+    cout << endl;
+    cout << "Soustraction : " << endl;
+    v3 = v1 - v2;
+    cout << v3;
+
+    cout << endl;
+    cout << "Produit par un scalaire (ici 2) : " << endl;
+    v3 = v1 * 2;
+    cout << v3;
+
+    cout << "Produit scalaire entre 2 vecteurs : " << v1 * v2 << endl;
+
+    cout << endl;
+    cout << "Produit vectoriel : " << endl;
+    v3 = v1 ^ v2;
+    cout << v3;
+
+    cout << endl;
+    if (v1 == v2) {
+        cout << "Les vecteurs coincident" << endl;
+    }
+    else {
+        cout << "Les vecteurs ne coincident pas" << endl;
+    }
 }
 

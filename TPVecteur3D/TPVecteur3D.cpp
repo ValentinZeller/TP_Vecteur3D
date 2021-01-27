@@ -37,5 +37,14 @@ int main()
     v3 = v1.prodVect(v2);
     v3.affiche();
 
+    cout << endl;
+    if (coincide(v1, v2)) {
+        cout << "Les vecteurs coincident" << endl;
+    }
+    else {
+        cout << "Les vecteurs ne coincident pas" << endl;
+    }
+    
+
 }
 

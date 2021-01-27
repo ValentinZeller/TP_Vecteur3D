@@ -15,9 +15,9 @@ public:
 	T prodScalVect(const vect3D& vect);
 	vect3D<T> prodVect(const vect3D& vect);
 
-	friend bool coincide(const vect3D& vect)
+	friend bool coincide(const vect3D& v1, const vect3D& v2)
 	{
-		if (m_x == vect.m_x && m_y == vect.m_y && m_z == vect.m_z) {
+		if (v1.m_x == v2.m_x && v1.m_y == v2.m_y && v1.m_z == v2.m_z) {
 			return true;
 		}
 		else {
